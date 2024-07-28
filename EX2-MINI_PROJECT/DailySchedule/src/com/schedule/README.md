@@ -37,10 +37,10 @@ The Astronaut Daily Schedule Organizer is a console-based Java application desig
 
 3. **Menu Options**:
 
-1. Add Task: Enter task details when prompted.
-2. Remove Task: Enter the task description to remove.
-3. View Tasks: Lists all scheduled tasks.
-4. Exit: Terminates the application.
+- Add Task: Enter task details when prompted.
+- Remove Task: Enter the task description to remove.
+- View Tasks: Lists all scheduled tasks.
+- Exit: Terminates the application.
 
 ## Error Handling
 1. Invalid Time Format: Displays an error if the time format is incorrect.
