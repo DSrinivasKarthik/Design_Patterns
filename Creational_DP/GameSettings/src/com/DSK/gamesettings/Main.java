@@ -28,21 +28,26 @@ public class Main {
                         System.out.println("Volume: " + settings.getVolume());
                         System.out.println("Screen Resolution: " + settings.getScreenResolution());
                         break;
+
                     case 2:
                         System.out.print("Enter new volume (0-100): ");
                         int volume = Integer.parseInt(scanner.nextLine());
                         settings.setVolume(volume);
                         break;
+
                     case 3:
                         System.out.print("Enter new screen resolution (e.g., 1920x1080): ");
                         String resolution = scanner.nextLine();
                         settings.setScreenResolution(resolution);
                         break;
+
                     case 4:
                         exit = true;
                         break;
+
                     default:
                         System.out.println("Invalid option. Please try again.");
+                        
                 }
             } catch (Exception e) {
                 logger.log(Level.SEVERE, "An error occurred: ", e);
