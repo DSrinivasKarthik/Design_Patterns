@@ -38,6 +38,5 @@ public class Main {
         document.close();
 
         scanner.close();
-        
     }
 }
