@@ -6,10 +6,10 @@ This repository demonstrates implementations of various design patterns. There a
 
 ### 1. Document Maker (Factory Method)
 
-**Use Case**: Creating different types of documents (e.g., PDF, Word) without specifying the exact class of object that will be created.
+**Use Case**: Creating different types of documents (e.g., PDF, Text, Word) without specifying the exact class of object that will be created.
 
 - **DocumentMaker**: Defines the factory method for creating documents.
-- **PDFDocument** and **WordDocument**: Concrete implementations of documents.
+- **PDFDocument** , **TextDocument** and **WordDocument**: Concrete implementations of documents.
 
 **Example**: The `DocumentMaker` class provides a `createDocument` method that returns different types of documents based on user input.
 
@@ -29,19 +29,20 @@ This repository demonstrates implementations of various design patterns. There a
 **Use Case**: Simplifying the process of controlling a complex home theater system by providing a unified interface.
 
 - **HomeTheaterFacade**: Provides methods to control various components of the home theater.
-- **Amplifier**, **DVDPlayer**, **Projector**, **Screen**, and **Lights**: Components of the home theater system.
+- **Amplifier**, **DVDPlayer**, **Projector**, and **Lights**: Components of the home theater system.
 
 **Example**: The `HomeTheaterFacade` class provides a simplified interface for turning on and using the home theater system, abstracting away the complexity of individual components.
 
 ### 2. Media Player (Adapter)
 
-**Use Case**: Adapting different media player interfaces to work with a unified media player system.
+**Use Case**: Adapting different media players with incompatible interfaces to work with a unified media player system.
 
 - **MediaPlayer**: Interface for playing media.
-- **OldMediaPlayer**: Legacy media player with a different interface.
-- **MediaPlayerAdapter**: Adapts `OldMediaPlayer` to the `MediaPlayer` interface.
+- **AdvancedMediaPlayer**: Interface for advanced media players with additional functionalities.
+- **MediaPlayerAdapter**: Adapts `AdvancedMediaPlayer` to the `MediaPlayer` interface.
+- **VLCPlayer** and **MP4Player**: Concrete implementations of the `AdvancedMediaPlayer`.
 
-**Example**: The `MediaPlayerAdapter` class adapts the interface of an old media player to be compatible with the new media player system, allowing for seamless integration.
+**Example**: The `MediaPlayerAdapter` class allows the `MediaPlayer` interface to work with `AdvancedMediaPlayer` implementations, such as `VLCPlayer` and `MP4Player`, which have different methods for playing media. The adapter provides a consistent interface for the unified media player system.
 
 ## Behavioral Design Patterns
 
