@@ -27,7 +27,7 @@ The Astronaut Daily Schedule Organizer is a console-based Java application desig
 - `Main.java`: Contains the main program loop and user interface logic.
 
 ## Usage Instructions
-1. **Compile the Project**:
+1. **Compile the Project (inside DailySchedule Folder)**:
    ```bash
    javac -d bin src/com/schedule/*.java
 2. **Run the Application**:
